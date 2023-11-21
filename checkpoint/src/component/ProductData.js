@@ -1,20 +1,18 @@
-function ProductData(){
-    const data = {
-        name: 'Product Name',
-        price: 29.99,
-        description: 'Product Description',
-        image: 'path/to/image.jpg',
-      };
-    return(
-        <>
-        </>
-    )
+
+import React from 'react';
+import { Card, CardGroup } from 'react-bootstrap';
+import ProductDress from './productdress';
+import ProductHeels from './productheels';
+import ProductBag from './productbag';
+
+function ProductData() {
+  return (
+    <CardGroup style={{ margin: '20px' }}>
+      <ProductDress />
+      <ProductHeels />
+      <ProductBag />
+    </CardGroup>
+  );
 }
 
-
-  
-  export default ProductData;
-  
-
-
-
+export default ProductData;
